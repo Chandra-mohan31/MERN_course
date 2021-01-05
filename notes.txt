@@ -2,3 +2,12 @@ Virtuals,crypto,uuid;
 mongo db docs and connections;
 "C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe"
 Middleware;
+writing Middleware;
+body-parser;
+cookie-parser;
+cors:used for linking frontend and backend;
+routes;
+express router;
+controllers;
+hitesh youtube tutorial on MongoDB;cmd line cmds;
+express-validator;
