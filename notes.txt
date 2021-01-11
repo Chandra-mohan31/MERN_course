@@ -13,4 +13,7 @@ hitesh youtube tutorial on MongoDB;cmd line cmds;
 express-validator;
 jsonwebtoken:create tokens for auth;
 coookie-parser:put the tokens into the user browser;
-express-jwt:lets authenticate HHTP requests using JWT tokens;
+express-jwt:lets authenticate HHTP requests using JWT tokens;\
+mongoose populate;****
+params;(router.params()); 
+populate and cross connections;
