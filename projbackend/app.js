@@ -8,6 +8,8 @@ const mongoose = require('mongoose');
 //my routes
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
+const categoryRoutes = require("./routes/category");
+const productRoutes = require("./routes/product");
 
 //db connection
 mongoose.connect(process.env.DATABASE,{
@@ -28,7 +30,8 @@ app.use(cors());
 //my routes
 app.use("/api",authRoutes);
 app.use("/api",userRoutes);
-
+app.use("/api",categoryRoutes);
+app.use("/api",productRoutes);
 
 //port
 const port = process.env.PORT || 8000;
@@ -37,3 +40,4 @@ const port = process.env.PORT || 8000;
 app.listen(port,()=>{
     console.log(`App is running on port ${port}`);
 })
+

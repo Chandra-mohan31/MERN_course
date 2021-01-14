@@ -1,6 +1,6 @@
 const User = require("../models/user");
 const Order = require("../models/order");
-const { json } = require("body-parser");
+
 
 exports.getUserById = (req,res,next,id)=>{
     User.findById(id).exec((err,user)=>{
@@ -73,7 +73,7 @@ exports.userPurchaseList = (req,res) =>{
                 error:"no orders found in this account"
             })
         }
-        return res,json(order);
+        return res.json(order);
     })
     
 }
@@ -91,6 +91,20 @@ exports.pushOrderInPurchaseList = (req,res,next) => {
            amount: req.body.order,
            transaction_id: req.body.order.transaction_id 
         })
-    })
-    next();
+    });
+    //store this in db
+    User.findOneAndUpdate(
+        {_id:req.profile._id},
+        {$push:{purchases: purchases}},
+        {new: true},
+        (err,purchases) => {
+            if(err){
+                return res.status(400).json({
+                    error:"unable to ave purchase list"
+                })
+            }
+            next();
+        }
+    )
+    
 }
