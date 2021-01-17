@@ -17,3 +17,13 @@ express-jwt:lets authenticate HHTP requests using JWT tokens;\
 mongoose populate;****
 params;(router.params()); 
 populate and cross connections;
+
+gothrough the npm docs:
+    form data;
+    multer;
+    formidable;
+    lodash;
+mongoose docs - bulk write;
+study populate docs;
+
+ENUMS;
