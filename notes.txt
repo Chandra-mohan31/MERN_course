@@ -27,3 +27,8 @@ mongoose docs - bulk write;
 study populate docs;
 
 ENUMS;
+deploy the backend to heruku ;
+and the DB;
+deploy frontend to firebase;
+
+//when DB connections fail ,go to the task manager,go to services and check for the running/stopped status of monogoDB;

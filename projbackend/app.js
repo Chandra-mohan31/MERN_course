@@ -19,7 +19,7 @@ mongoose.connect(process.env.DATABASE,{
 }).then(()=>{
     console.log("DB CONNECTED");
 })
-.catch(()=>{console.log("DB NOT CONNECTED")});
+.catch((err)=>{console.log(err)});
 
 //Middlewares
 app.use(bodyParser.json());
