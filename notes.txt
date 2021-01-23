@@ -32,3 +32,4 @@ and the DB;
 deploy frontend to firebase;
 
 //when DB connections fail ,go to the task manager,go to services and check for the running/stopped status of monogoDB;
+js higher order functions;

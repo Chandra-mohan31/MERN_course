@@ -4,9 +4,9 @@ import {API} from "../backend";
 import Base from "./Base";
 
 function Home() {
-    console.log("API is ",API);
+    //console.log("API is ",API);
     return (
-        <Base>
+        <Base title="Home Page" description="Welcome to our t-shirt store">
             <h1 className="text-white"> hey there</h1>
         </Base>
     )
