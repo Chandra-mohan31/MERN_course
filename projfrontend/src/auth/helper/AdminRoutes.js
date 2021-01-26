@@ -24,4 +24,4 @@ const AdminRoutes = ({ component: Component, ...rest }) =>{
     );
   }
 
-export default AdminRoutes
+export default AdminRoutes;
