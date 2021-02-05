@@ -8,6 +8,10 @@ import PrivateRoutes from "./auth/helper/PrivateRoutes";
 import UserDashboard from "./user/UserDashBoard";
 import AdminDashboard from "./user/AdminDashBoard";
 import AddCategory from './admin/AddCategory';
+import manageCategories from './admin/manageCategories';
+import AddProduct from './admin/AddProduct';
+import ManageProducts from './admin/ManageProducts';
+
 
 
 function Routes() {
@@ -21,6 +25,12 @@ function Routes() {
                 <PrivateRoutes path="/user/dashboard" exact component={UserDashboard} />
                 <AdminRoutes path="/admin/dashboard" exact component={AdminDashboard} />
                 <AdminRoutes path="/admin/create/category" exact component={AddCategory} />
+                <AdminRoutes path="/admin/categories" exact component={manageCategories} />
+                <AdminRoutes path="/admin/create/product" exact component={AddProduct} />
+                <AdminRoutes path="/admin/products" exact component={ManageProducts} />
+
+
+
 
 
 

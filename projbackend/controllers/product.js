@@ -105,7 +105,7 @@ exports.deleteProduct = (req,res) =>{
     }
     res.json({
       message:"deleted successfully",
-      deleteProduct
+      deletedProduct
     })
   })
 }
