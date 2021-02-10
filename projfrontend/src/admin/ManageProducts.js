@@ -27,7 +27,9 @@ function ManageProducts() {
     }
 
     return (
-        <Base title="Welcome admin" description="Manage products here">
+        <Base title="Welcome admin" description="Manage products here"
+        footerstyle={{positon:"absolute",bottom: 0,right: 0,left: 0}} title="Home Page" 
+        >
       <h2 className="mb-4">All products:</h2>
       <Link className="btn btn-info" to={`/admin/dashboard`}>
         <span className="">Admin Home</span>
@@ -45,7 +47,7 @@ function ManageProducts() {
             <div className="col-4">
               <Link
                 className="btn btn-success"
-                to={`/admin/product/update/productId`}
+                to={`/admin/product/update/${product._id}`}
               >
                 <span className="">Update</span>
               </Link>

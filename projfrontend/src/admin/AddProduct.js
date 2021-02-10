@@ -174,6 +174,7 @@ function AddProduct() {
   
   return (
     <Base
+    footerstyle={{positon:"absolute",bottom: 0,right: 0,left: 0}} 
     title="Add a product here"
     description="Welcome to prouct creation section"
     className="container bg-info p-4"

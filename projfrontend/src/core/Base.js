@@ -6,6 +6,12 @@ const Base = ({
   title = "My Title",
   description = "My desription",
   className = " text-white p-4",
+  footerstyle= {
+    position: "absolute",
+    bottom: 0,
+    right: 0,
+    left: 0
+  },
   children
 }) => (
   <div >
@@ -18,7 +24,7 @@ const Base = ({
       </div>
       <div className={className}>{children}</div>
     </div>
-    <footer className="footer  mt-auto py-3">
+    <footer style={footerstyle} className="footer  mt-auto py-3">
       <div className="container-fluid bg-success text-white text-center py-3">
         <h4>If you got any questions, feel free to reach out!</h4>
         <button className="btn btn-warning btn-lg">Contact Us</button>

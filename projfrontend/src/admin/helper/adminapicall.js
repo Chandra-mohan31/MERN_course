@@ -90,12 +90,11 @@ export const getProduct = (productId) => {
 
 //update a product
 
-export const updateProduct = (userId,product,token,productId) => {
+export const updateProduct = (productId, userId, token, product) => {
     return fetch(`${API}/product/${productId}/${userId}`,{
         method:"PUT",
         headers:{
             Accept:"application/json",
-            
             Authorization: `Bearer ${token}`
         },
         body: product
@@ -108,6 +107,7 @@ export const updateProduct = (userId,product,token,productId) => {
     })
 }
 
+  
 
 //delete a product
 export const deleteProduct = (productId,userId,token) => {

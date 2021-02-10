@@ -67,7 +67,7 @@ const AdminDashboard = () => {
       };
 
     return (
-        <Base title="Welcome Admin" description="Mange your Products here" className="container bg-success p-4" >
+        <Base title="Welcome Admin" description="Mange your Products here" className="container bg-success p-4" footerstyle={{positon:"absolute",bottom: 0,right: 0,left: 0}} >
         <div className="row">
         <div className="col-3">
         {adminLeftSide()}

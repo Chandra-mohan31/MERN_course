@@ -100,7 +100,7 @@ const Signup = () => {
         )
     }
     return (
-        <Base title="signup page" description="signup a user here">
+        <Base footerstyle={{positon:"absolute",bottom: 0,right: 0,left: 0}} title="signup page" description="signup a user here">
                 {successMessage()}
                 {errorMessage()}
                 {
