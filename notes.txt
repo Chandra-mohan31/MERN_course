@@ -1,3 +1,7 @@
+secret key in the backend,
+publishable key in the frontend into the .env File;
+deploy frontend to netlify and the backend to heruko;
+
 Virtuals,crypto,uuid;
 mongo db docs and connections;
 "C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe"

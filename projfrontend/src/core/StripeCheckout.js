@@ -21,9 +21,9 @@ function StripeCheckout({products,setReload=f=>f,reload=undefined}) {
     const token = isAuthenticated() && isAuthenticated().token;
     const userId = isAuthenticated() && isAuthenticated().user._id;
 
-
+    let amount = 0;
     const getFinalPrice = () => {
-        let amount = 0;
+        
         products.map(p=>{
             amount = amount + p.price;
         })
@@ -48,7 +48,17 @@ function StripeCheckout({products,setReload=f=>f,reload=undefined}) {
             const {status} = res;
             console.log("STATUS",status);
             //cartEmpty();
-
+            console.log("PAYMENT SUCCESSFULL");
+            cartEmpty(()=>{
+                console.log("did we got a crash");
+            })
+            const orderData = {
+                products: products,
+                //transaction_id: res.transaction_id,
+                amount: amount
+            }
+            //createOrder(userId,token,orderData)
+            setReload(!reload);
             //call further methods
             //createOrder and clear cart
         })

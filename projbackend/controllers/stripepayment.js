@@ -1,4 +1,4 @@
-const stripe = require("stripe")("sk_test_51HQQv5Ld2gz6KU7di0aqt8pDGUJB1cmUzsWD2FbIORHBIu5KUYqTeUKM5apHYHbdqieDsvqLCTUoHeutKglP7rFR00eSRl3jAR");
+const stripe = require("stripe")(process.env.SECRET_KEY);
 const uuid = require("uuid/v4");
 
 
